@@ -1,0 +1,20 @@
+h1 { /* tag que quero formatar */
+    color:gold;
+}
+
+p {
+    color:blue;
+}
+
+div {
+    border: 2px solid black;
+    width: 50px; /* Largura */
+    height: 50px; /* Altura */
+}
+
+#div1 {
+    background-color:brown;
+}
+#div2 {
+    background-color:aquamarine ;
+}
