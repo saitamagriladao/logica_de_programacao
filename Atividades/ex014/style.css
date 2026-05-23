@@ -1,0 +1,17 @@
+h1 { /* tag que quero formatar */
+    color:black;
+}
+
+p {
+    color:black;
+}
+
+div {
+    border: 2px solid black;
+    width: 50px; /* Largura */
+    height: 50px; /* Altura */
+}
+
+#div1 {
+    background-color:brown;
+}
