@@ -1,4 +1,5 @@
-function verificar(){
+function verificar(event){
+    event.preventDefault();
     let nascimento = document.getElementById('nascimento').value; // menor de idade não pode doar sangue.
 
     let doencaSelecionada = document.querySelector('input[name="sick"]:checked').value;
@@ -30,14 +31,28 @@ function verificar(){
     } else {
         resultado.innerHTML = `<p><span style="color: white; background-color: green;">Você é maior de idade e pode doar sangue.</span></p>`
 
-    } if (doencaSelecionada = `yes`) {
+
+    } if (doencaSelecionada == "yes") {
         resultado.innerHTML += `<p><span style="color: white; background-color: red;">Você possui alguma doença e não pode doar sangue.</span></p>`
     } else {
         resultado.innerHTML += `<p><span style="color: white; background-color: green;">Você não possui doença e pode doar sangue.</span></p>`    
+
 
     } if (peso < 50) {
         resultado.innerHTML += `<p><span style="color: white; background-color: red;">Você está abaixo do peso mínimo e não pode doar sangue.</span></p>`
     } else {
         resultado.innerHTML += `<p><span style="color: white; background-color: green;">Você está dentro da margem de peso mínimo e pode doar sangue.</span></p>`
+
+
+    } if (tattooSelecionada == "yes") {
+        resultado.innerHTML += `<p><span style="color: white; background-color: red;">Você possui tatuagem recente e não pode doar sangue.</span></p>`
+    } else {
+        resultado.innerHTML += `<p><span style="color: white; background-color: green;">Você não possui tatuagem recente e pode doar sangue.</span></p>`
+
+
+    } if (medicineSelecionada == "yes") {
+        resultado.innerHTML += `<p><span style="color: white; background-color: red;">Você usa medicamento e não pode doar sangue.</span></p>`
+    } else {
+        resultado.innerHTML += `<p><span style="color: white; background-color: green;">Você não usa medicamento e pode doar sangue.</span></p>`
     }
 }
