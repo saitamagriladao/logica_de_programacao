@@ -1,7 +1,9 @@
 function calcular(){
-    for (let cont = 1; cont <= 10; cont++){
-    console.log(`O contador esta na posição ${cont}`)
-    if (number * cont)
-        resultado.innerHTML = (cont)
-}
+    var numero = Number(document.getElementById('input_numero').value)
+
+    resultado.innerHTML = `Tabuada de <strong>${numero}</strong><br>`
+
+    for (let cont = 0; cont <= 10; cont++){
+        resultado.innerHTML += `${numero} x ${cont} = <strong>${numero * cont}</strong><br>`
+    }
 }
